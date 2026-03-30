@@ -23,6 +23,8 @@
       "image": "https://i.hizliresim.com/lmbf08c.png",
       "url": "https://dates1905.github.io/gazianteptakograf/",
       "telephone": "+905067320285",
+      "description": "Gaziantep'te takograf tamiri, bakım, kalibrasyon ve teknik servis hizmetleri.",
+      "priceRange": "₺₺",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Sanayi, sanayi mah 60215, Nolu Cd no 26/1 ŞEHİTKAMİL",
@@ -31,8 +33,20 @@
         "addressRegion": "Gaziantep",
         "addressCountry": "TR"
       },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.086,
+        "longitude": 37.383
+      },
       "areaServed": "Gaziantep",
-      "openingHours": "Mo-Sa 08:00-19:00",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "08:00",
+          "closes": "19:00"
+        }
+      ],
       "sameAs": [
         "https://dates1905.github.io/gazianteptakograf/"
       ]
@@ -495,6 +509,59 @@
     .cta-wrap p { color: var(--muted); line-height: 1.8; margin-top: 14px; max-width: 780px; }
 
     .contact-wrap { padding: 34px; }
+
+    .maps-wrap {
+      padding: 34px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .hours-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .hours-card, .maps-card {
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 24px;
+      overflow: hidden;
+      background: rgba(0,0,0,.22);
+    }
+
+    .hours-card {
+      padding: 22px;
+    }
+
+    .hours-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+      color: #eef1f5;
+    }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+
+    .hours-row:last-child {
+      border-bottom: none;
+    }
+
+    .maps-card iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      border: 0;
+      display: block;
+    }
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr auto;
@@ -559,6 +626,7 @@
       }
     }
     @media (max-width: 1100px) {
+      .hours-grid { grid-template-columns: 1fr; }
       .hero-grid,
       .faq-grid,
       .why,
@@ -644,7 +712,7 @@
         <div>
           <div class="eyebrow">Gaziantep'te Güven Veren Hizmet Noktası</div>
           <h1>
-            Ağır vasıtalar İçin
+            Tır ve Kamyonlar İçin
             <span class="grad">Takograf Tamiri, Bakımı ve Teknik Destek</span>
           </h1>
           <p class="lead">
@@ -752,7 +820,7 @@
             <div class="vehicle-body">
               <div class="vehicle-top">
                 <div>
-                  <h3>Mercedes</h3>
+                  <h3>Mercedes-Benz Actros</h3>
                   <p>Uzun Yol Çekicisi</p>
                 </div>
                 <div>🚚</div>
@@ -766,7 +834,7 @@
             <div class="vehicle-body">
               <div class="vehicle-top">
                 <div>
-                  <h3>Volvo</h3>
+                  <h3>Volvo FH</h3>
                   <p>Ağır Vasıta Tırı</p>
                 </div>
                 <div>🚚</div>
@@ -780,7 +848,7 @@
             <div class="vehicle-body">
               <div class="vehicle-top">
                 <div>
-                  <h3>Scania</h3>
+                  <h3>Scania R Series</h3>
                   <p>Güçlü Yol Taşımacılığı</p>
                 </div>
                 <div>🚚</div>
@@ -794,7 +862,7 @@
             <div class="vehicle-body">
               <div class="vehicle-top">
                 <div>
-                  <h3>MAN</h3>
+                  <h3>MAN TGX</h3>
                   <p>Lojistik ve Nakliye</p>
                 </div>
                 <div>🚚</div>
@@ -808,7 +876,7 @@
             <div class="vehicle-body">
               <div class="vehicle-top">
                 <div>
-                  <h3>DAF</h3>
+                  <h3>DAF XG</h3>
                   <p>Yeni Nesil Çekici</p>
                 </div>
                 <div>🚚</div>
@@ -820,7 +888,7 @@
           <article class="vehicle more">
             <div class="vehicle-body">
               <div style="font-size:3.2rem;">🚛</div>
-              <h3>Ve Diğer Araçlar</h3>
+              <h3>Diğer Araçlar</h3>
               <p>Diğer tır, kamyon ve ticari araç grupları için de takograf hizmetleri sunulmaktadır.</p>
             </div>
           </article>
@@ -886,6 +954,39 @@
           <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end;align-items:center;">
             <a class="btn btn-primary" href="https://wa.me/905067320285?text=Merhaba%20Gaziantep%20Takograf%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noreferrer">WhatsApp'tan Hemen Yaz</a>
             <a class="btn btn-secondary" href="tel:05067320285">Hemen Ara</a>
+          </div>
+        </div>
+      </div>
+    </section>
+      <section id="konum-saatler">
+      <div class="container maps-wrap">
+        <div class="section-head" style="max-width:100%; margin-bottom:20px;">
+          <div class="label">Konum ve Çalışma Saatleri</div>
+          <h2>Gaziantep Takograf'a Kolayca Ulaşın</h2>
+          <p>Gaziantep Şehitkamil konumunda hizmet veriyoruz. Telefon, WhatsApp ve harita üzerinden bize hızlıca ulaşabilirsiniz.</p>
+        </div>
+
+        <div class="hours-grid">
+          <div class="hours-card">
+            <h3 style="margin:0; font-size:1.5rem;">Çalışma Saatleri</h3>
+            <div class="hours-list">
+              <div class="hours-row"><span>Pazartesi</span><strong>08:00 - 19:00</strong></div>
+              <div class="hours-row"><span>Salı</span><strong>08:00 - 19:00</strong></div>
+              <div class="hours-row"><span>Çarşamba</span><strong>08:00 - 19:00</strong></div>
+              <div class="hours-row"><span>Perşembe</span><strong>08:00 - 19:00</strong></div>
+              <div class="hours-row"><span>Cuma</span><strong>08:00 - 19:00</strong></div>
+              <div class="hours-row"><span>Cumartesi</span><strong>08:00 - 19:00</strong></div>
+              <div class="hours-row"><span>Pazar</span><strong>Kapalı</strong></div>
+            </div>
+          </div>
+
+          <div class="maps-card">
+            <iframe
+              src="https://www.google.com/maps?q=Sanayi%2C%20sanayi%20mah%2060215%2C%20Nolu%20Cd%20no%2026%2F1%20%C5%9EEH%C4%B0TKAM%C4%B0L%2C%2027200%20%C5%9Eehitkamil%2FGaziantep&z=16&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Gaziantep Takograf Harita"
+            ></iframe>
           </div>
         </div>
       </div>
