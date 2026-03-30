@@ -3,18 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gaziantep Takograf | Takograf Tamir, Bakım ve Kalibrasyon</title>
-  <meta name="description" content="Gaziantep Takograf - takograf tamiri, bakım, kalibrasyon, teknik destek ve ağır vasıta hizmetleri." />
+
+  <title>Gaziantep Takograf | Takograf Tamiri, Bakım, Kalibrasyon ve Teknik Servis</title>
+  <meta name="description" content="Gaziantep Takograf; takograf tamiri, bakım, kalibrasyon, dijital takograf teknik servisi ve ağır vasıta çözümleri sunar. Tır, kamyon ve ticari araçlar için hızlı ve güvenilir hizmet." />
   <meta name="google-site-verification" content="6qm-GuHxG4SUuWRY6MPGLANMX2noaWpDfc1GlBt2mEU" />
-  <meta name="keywords" content="gaziantep takograf, takograf tamiri gaziantep, takograf bakım, takograf kalibrasyon, tır takograf, kamyon takograf" />
+  <meta name="keywords" content="gaziantep takograf, takograf tamiri gaziantep, takograf bakım, takograf kalibrasyon, dijital takograf, tır takograf, kamyon takograf, gaziantep takograf servisi" />
   <meta name="author" content="Gaziantep Takograf" />
-  <meta property="og:title" content="Gaziantep Takograf | Takograf Tamir, Bakım ve Kalibrasyon" />
-  <meta property="og:description" content="Takograf tamiri, bakım ve teknik hizmetler" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#ff8a1c" />
+
+  <meta property="og:title" content="Gaziantep Takograf | Takograf Tamiri, Bakım ve Kalibrasyon" />
+  <meta property="og:description" content="Gaziantep'te takograf tamiri, bakım, kalibrasyon ve teknik hizmetler." />
   <meta property="og:image" content="https://i.hizliresim.com/lmbf08c.png" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dates1905.github.io/gazianteptakograf/" />
+  <meta property="og:locale" content="tr_TR" />
+
   <link rel="canonical" href="https://dates1905.github.io/gazianteptakograf/" />
   <link rel="icon" href="https://i.hizliresim.com/lmbf08c.png" />
+
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -23,6 +30,8 @@
       "image": "https://i.hizliresim.com/lmbf08c.png",
       "url": "https://dates1905.github.io/gazianteptakograf/",
       "telephone": "+905067320285",
+      "description": "Gaziantep'te takograf tamiri, bakım, kalibrasyon ve teknik servis hizmetleri.",
+      "priceRange": "₺₺",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Sanayi, sanayi mah 60215, Nolu Cd no 26/1 ŞEHİTKAMİL",
@@ -38,6 +47,7 @@
       ]
     }
   </script>
+
   <style>
     :root {
       --bg: #07090d;
@@ -55,12 +65,13 @@
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       font-family: Inter, Arial, Helvetica, sans-serif;
       color: var(--text);
       background:
-        linear-gradient(rgba(7,9,13,0.6), rgba(7,9,13,0.75)),
+        linear-gradient(rgba(7,9,13,0.50), rgba(7,9,13,0.66)),
         url("https://lh3.googleusercontent.com/gps-cs-s/AHVAwep_ukgN-ybkbtO2cB8dQG4-CFUlpE3SSqX3iX87AIHKDghTt1xPnSo7O0YBw0QjkZtBcZAOrxWTpBpEtI_BLHCbhNYS6Ms2Wwx4ewvG2jEFDokZPld09FybB7lCxEkzFliFDeCbrg=s1360-w1360-h1020-rw") no-repeat center center fixed;
       background-size: cover;
       overflow-x: hidden;
@@ -76,6 +87,7 @@
       pointer-events: none;
       z-index: -2;
     }
+
     .bubble {
       position: absolute;
       bottom: -120px;
@@ -85,10 +97,12 @@
       box-shadow: 0 0 30px rgba(255,138,28,.10);
       animation: rise linear infinite;
     }
+
     .bubble.small {
       background: rgba(255,255,255,.08);
       border-color: rgba(255,255,255,.08);
     }
+
     @keyframes rise {
       0% { transform: translateY(0) translateX(0) scale(.7); opacity: 0; }
       20% { opacity: .45; }
@@ -96,7 +110,10 @@
       100% { transform: translateY(-115vh) translateX(24px) scale(1.1); opacity: 0; }
     }
 
-    .container { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
+    .container {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
 
     header {
       position: sticky;
@@ -106,6 +123,7 @@
       background: rgba(0,0,0,.42);
       border-bottom: 1px solid rgba(255,255,255,.08);
     }
+
     .nav {
       min-height: 82px;
       display: flex;
@@ -113,11 +131,13 @@
       justify-content: space-between;
       gap: 16px;
     }
+
     .brand {
       display: flex;
       align-items: center;
       gap: 14px;
     }
+
     .brand img {
       width: 54px;
       height: 54px;
@@ -126,24 +146,36 @@
       background: rgba(255,255,255,.04);
       padding: 4px;
     }
+
     .brand-title {
       font-size: 1.45rem;
       font-weight: 900;
       letter-spacing: .02em;
     }
+
     .brand-sub {
       font-size: .92rem;
       color: var(--muted);
       margin-top: 4px;
     }
+
     .nav-links {
       display: flex;
       gap: 28px;
       color: #d5dbe4;
       font-weight: 600;
     }
+
     .nav-links a:hover { color: #fff; }
-    .btns { display: flex; gap: 12px; align-items: center; }
+
+    .btns {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
     .btn {
       display: inline-flex;
       align-items: center;
@@ -155,18 +187,23 @@
       font-weight: 800;
       transition: .25s ease;
       cursor: pointer;
+      white-space: nowrap;
     }
+
     .btn-primary {
       background: linear-gradient(135deg, var(--accent), var(--accent-2));
       color: #121212;
       border: none;
       box-shadow: 0 14px 35px rgba(255,138,28,.25);
     }
+
     .btn-primary:hover { transform: translateY(-2px); }
+
     .btn-secondary {
       background: rgba(255,255,255,.05);
       color: #fff;
     }
+
     .btn-secondary:hover {
       background: rgba(255,255,255,.10);
       transform: translateY(-2px);
@@ -177,6 +214,7 @@
       padding: 72px 0 34px;
       overflow: hidden;
     }
+
     .hero-grid {
       display: grid;
       grid-template-columns: 1.1fr .9fr;
@@ -184,6 +222,7 @@
       align-items: center;
       min-height: calc(100vh - 110px);
     }
+
     .eyebrow {
       display: inline-flex;
       align-items: center;
@@ -196,6 +235,7 @@
       font-weight: 700;
       margin-bottom: 18px;
     }
+
     h1 {
       margin: 0;
       font-size: clamp(2.7rem, 7vw, 5.5rem);
@@ -203,6 +243,7 @@
       font-weight: 900;
       letter-spacing: -.03em;
     }
+
     .grad {
       background: linear-gradient(90deg, #ff8a1c, #ffcf94, #ffffff);
       -webkit-background-clip: text;
@@ -210,6 +251,7 @@
       color: transparent;
       display: block;
     }
+
     .lead {
       margin: 22px 0 0;
       max-width: 760px;
@@ -217,18 +259,21 @@
       font-size: 1.12rem;
       line-height: 1.8;
     }
+
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 14px;
       margin-top: 28px;
     }
+
     .hero-stats {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 16px;
       margin-top: 34px;
     }
+
     .stat {
       background: rgba(255,255,255,.05);
       border: 1px solid rgba(255,255,255,.08);
@@ -237,11 +282,13 @@
       padding: 22px;
       box-shadow: var(--shadow);
     }
+
     .stat strong {
       display: block;
       font-size: 1.35rem;
       font-weight: 900;
     }
+
     .stat span {
       display: block;
       margin-top: 6px;
@@ -258,17 +305,20 @@
       background: rgba(255,255,255,.05);
       box-shadow: var(--shadow);
     }
+
     .hero-card > img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      opacity: .9;
+      opacity: .92;
     }
+
     .hero-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(0,0,0,.12), rgba(0,0,0,.55));
+      background: linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.52));
     }
+
     .hero-boxes {
       position: absolute;
       left: 22px;
@@ -278,6 +328,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 12px;
     }
+
     .hero-mini {
       padding: 16px 14px;
       border-radius: 20px;
@@ -285,18 +336,22 @@
       border: 1px solid rgba(255,255,255,.10);
       backdrop-filter: blur(12px);
     }
+
     .hero-mini small {
       display: block;
       color: #cfd5dd;
       margin-bottom: 6px;
     }
+
     .hero-mini strong { font-size: 1rem; }
 
     section { padding: 34px 0; }
+
     .section-head {
       max-width: 850px;
       margin-bottom: 24px;
     }
+
     .section-head .label {
       display: inline-block;
       padding: 10px 16px;
@@ -307,12 +362,14 @@
       font-weight: 800;
       margin-bottom: 14px;
     }
+
     .section-head h2 {
       margin: 0;
       font-size: clamp(2rem, 4vw, 3.6rem);
       line-height: 1.05;
       font-weight: 900;
     }
+
     .section-head p {
       margin: 16px 0 0;
       color: var(--muted);
@@ -325,23 +382,27 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 18px;
     }
+
     .service,
     .why-card,
     .faq-box,
     .vehicle,
     .contact-wrap,
-    .cta-wrap {
+    .seo-wrap {
       background: rgba(255,255,255,.05);
       border: 1px solid rgba(255,255,255,.08);
       border-radius: 28px;
       box-shadow: var(--shadow);
     }
+
     .service {
       padding: 24px;
       transition: .25s ease;
     }
+
     .service:hover,
     .vehicle:hover { transform: translateY(-6px); }
+
     .icon {
       width: 58px;
       height: 58px;
@@ -354,6 +415,7 @@
       font-size: 1.55rem;
       margin-bottom: 18px;
     }
+
     .service h3 { margin: 0; font-size: 1.24rem; }
     .service p { margin: 12px 0 0; color: var(--muted); line-height: 1.8; }
 
@@ -363,11 +425,14 @@
       gap: 18px;
       align-items: stretch;
     }
+
     .why-card {
       padding: 30px;
       background: linear-gradient(180deg, rgba(255,138,28,.12), rgba(255,255,255,.04));
     }
+
     .why-list { display: grid; gap: 14px; margin-top: 20px; }
+
     .why-item {
       display: flex;
       gap: 12px;
@@ -376,6 +441,7 @@
       border-radius: 20px;
       background: rgba(0,0,0,.22);
     }
+
     .tick {
       width: 28px;
       height: 28px;
@@ -388,38 +454,50 @@
       font-weight: 900;
       flex: none;
     }
+
     .why-image {
       overflow: hidden;
       border-radius: 30px;
       min-height: 520px;
       border: 1px solid rgba(255,255,255,.08);
     }
-    .why-image img { width: 100%; height: 100%; object-fit: cover; }
+
+    .why-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
     .vehicles {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 18px;
     }
+
     .vehicle {
       overflow: hidden;
       background: #111318;
       transition: .25s ease;
     }
+
     .vehicle img {
       width: 100%;
       height: 260px;
       object-fit: cover;
     }
+
     .vehicle-body { padding: 22px; }
+
     .vehicle-top {
       display: flex;
       justify-content: space-between;
       gap: 12px;
       align-items: flex-start;
     }
+
     .vehicle h3 { margin: 0; font-size: 1.5rem; }
     .vehicle p { margin: 8px 0 0; color: var(--muted); }
+
     .vehicle-tag {
       margin-top: 18px;
       padding: 14px 16px;
@@ -428,6 +506,7 @@
       border: 1px solid rgba(255,255,255,.08);
       color: #e9edf2;
     }
+
     .vehicle.more {
       display: flex;
       align-items: center;
@@ -442,7 +521,9 @@
       grid-template-columns: .9fr 1.1fr;
       gap: 18px;
     }
+
     .faq-box { padding: 28px; }
+
     .faq-item {
       border: 1px solid rgba(255,255,255,.08);
       background: rgba(0,0,0,.22);
@@ -450,46 +531,75 @@
       padding: 18px 20px;
       margin-top: 14px;
     }
+
     .faq-item summary {
       cursor: pointer;
       list-style: none;
       font-weight: 800;
     }
+
     .faq-item summary::-webkit-details-marker { display: none; }
-    .faq-item p { color: var(--muted); line-height: 1.8; margin: 12px 0 0; }
+
+    .faq-item p {
+      color: var(--muted);
+      line-height: 1.8;
+      margin: 12px 0 0;
+    }
+
     .faq-photo {
       border-radius: 30px;
       overflow: hidden;
       min-height: 100%;
       border: 1px solid rgba(255,255,255,.08);
     }
-    .faq-photo img { width: 100%; height: 100%; min-height: 100%; object-fit: cover; }
 
-    .cta-wrap {
+    .faq-photo img {
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+
+    .seo-wrap {
       padding: 34px;
-      background: linear-gradient(90deg, rgba(255,138,28,.18), rgba(13,15,20,.9), rgba(0,0,0,.95));
+      background: linear-gradient(90deg, rgba(255,138,28,.13), rgba(13,15,20,.90), rgba(0,0,0,.88));
     }
-    .cta-grid {
+
+    .seo-grid {
       display: grid;
-      grid-template-columns: 1fr auto;
+      grid-template-columns: 1fr 1fr;
       gap: 18px;
-      align-items: center;
     }
-    .cta-wrap h3 { margin: 0; font-size: clamp(2rem, 3.8vw, 3.6rem); }
-    .cta-wrap p { color: var(--muted); line-height: 1.8; margin-top: 14px; max-width: 780px; }
+
+    .seo-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .seo-list .item {
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.08);
+      color: #e7ecf1;
+    }
 
     .contact-wrap { padding: 34px; }
+
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 20px;
       align-items: center;
     }
+
     .contact-meta {
       display: grid;
       gap: 16px;
       margin-top: 22px;
     }
+
     .meta {
       display: flex;
       align-items: flex-start;
@@ -497,6 +607,7 @@
       color: #eef1f5;
       line-height: 1.8;
     }
+
     .meta-icon {
       width: 42px;
       height: 42px;
@@ -515,6 +626,7 @@
       border-top: 1px solid rgba(255,255,255,.08);
       background: rgba(0,0,0,.25);
     }
+
     .footer {
       min-height: 78px;
       display: flex;
@@ -529,24 +641,54 @@
       .hero-grid,
       .faq-grid,
       .why,
-      .cta-grid,
-      .contact-grid { grid-template-columns: 1fr; }
+      .contact-grid,
+      .seo-grid {
+        grid-template-columns: 1fr;
+      }
+
       .services { grid-template-columns: repeat(2,1fr); }
       .vehicles { grid-template-columns: repeat(2,1fr); }
       .hero-card { min-height: 540px; }
     }
+
+    @media (max-width: 900px) {
+      .nav {
+        flex-wrap: wrap;
+        padding: 14px 0;
+      }
+
+      .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+      }
+
+      .btns {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
     @media (max-width: 820px) {
-      .nav-links { display: none; }
       .hero { padding-top: 44px; }
       .hero-grid { min-height: auto; }
       .hero-boxes,
       .hero-stats,
       .services,
-      .vehicles { grid-template-columns: 1fr; }
+      .vehicles {
+        grid-template-columns: 1fr;
+      }
+
       .brand-title { font-size: 1.15rem; }
       .brand-sub { font-size: .82rem; }
-      .btns { display: none; }
       .hero-card { min-height: 430px; }
+      .footer {
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px 0;
+      }
     }
   </style>
 </head>
@@ -568,6 +710,7 @@
         <a href="#neden">Neden Biz</a>
         <a href="#araclar">Araçlar</a>
         <a href="#sss">Sık Sorulanlar</a>
+        <a href="#seo-bilgi">Detaylı Bilgi</a>
         <a href="#iletisim">İletişim</a>
       </nav>
 
@@ -595,6 +738,7 @@
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://wa.me/905067320285?text=Merhaba%20Gaziantep%20Takograf%2C%20takograf%20hizmeti%20almak%20istiyorum." target="_blank" rel="noreferrer">WhatsApp'tan Yaz</a>
             <a class="btn btn-secondary" href="tel:05067320285">Hemen Ara</a>
+            <a class="btn btn-secondary" href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwjYmbOmmMiTAxUAAAAAHQAAAAAQCQ..i&client=opera&pvq=Cg0vZy8xMXI3cWZyeHljIg4KCHRha29ncmFmEAIYAw&lqi=ChJnYXppYW50ZXAgdGFrb2dyYWZIq-fv5p63gIAIWhoQARgAGAEiEmdhemlhbnRlcCB0YWtvZ3JhZpIBF2VsZWN0cm9uaWNzX3JlcGFpcl9zaG9w&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=tr&sa=X&ftid=0x1531e5fbe743a0f9:0x516bc987f7f752e2" target="_blank" rel="noreferrer">Konuma Git</a>
           </div>
 
           <div class="hero-stats">
@@ -605,7 +749,7 @@
         </div>
 
         <div class="hero-card">
-          <img src="https://polonyanakliyat.com/wp-content/uploads/2024/04/takograflarin-degistirilmesi-polonya-nakliyat.jpg" alt="Takograf hizmet görseli" />
+          <img src="https://polonyanakliyat.com/wp-content/uploads/2024/04/takograflarin-degistirilmesi-polonya-nakliyat.jpg" alt="Gaziantep Takograf teknik servis görseli" />
           <div class="hero-overlay"></div>
           <div class="hero-boxes">
             <div class="hero-mini"><small>Tamir</small><strong>Hızlı Müdahale</strong></div>
@@ -672,7 +816,7 @@
         </div>
 
         <div class="why-image">
-          <img src="https://savasoto.com.tr/image/catalog/2.jpg" alt="Servis görseli" />
+          <img src="https://savasoto.com.tr/image/catalog/2.jpg" alt="Takograf servis ortamı" />
         </div>
       </div>
     </section>
@@ -689,7 +833,7 @@
 
         <div class="vehicles">
           <article class="vehicle">
-            <img src="https://d2e5b8shawuel2.cloudfront.net/vehicle/301381/hlv/original.jpg" alt="Mercedes-Benz Actros" />
+            <img src="https://d2e5b8shawuel2.cloudfront.net/vehicle/301381/hlv/original.jpg" alt="Mercedes-Benz Actros takograf hizmeti" />
             <div class="vehicle-body">
               <div class="vehicle-top">
                 <div>
@@ -703,7 +847,7 @@
           </article>
 
           <article class="vehicle">
-            <img src="https://www.classtrucks.com/wp-content/uploads/2024/12/DSC04972-Edit-scaled-1.jpg" alt="Volvo FH" />
+            <img src="https://www.classtrucks.com/wp-content/uploads/2024/12/DSC04972-Edit-scaled-1.jpg" alt="Volvo FH takograf hizmeti" />
             <div class="vehicle-body">
               <div class="vehicle-top">
                 <div>
@@ -717,7 +861,7 @@
           </article>
 
           <article class="vehicle">
-            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1600&q=80" alt="Scania R Series" />
+            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1600&q=80" alt="Scania R Series takograf hizmeti" />
             <div class="vehicle-body">
               <div class="vehicle-top">
                 <div>
@@ -731,7 +875,7 @@
           </article>
 
           <article class="vehicle">
-            <img src="https://images.unsplash.com/photo-1616432043562-3671ea2e5242?auto=format&fit=crop&w=1600&q=80" alt="MAN TGX" />
+            <img src="https://images.unsplash.com/photo-1616432043562-3671ea2e5242?auto=format&fit=crop&w=1600&q=80" alt="MAN TGX takograf hizmeti" />
             <div class="vehicle-body">
               <div class="vehicle-top">
                 <div>
@@ -745,7 +889,7 @@
           </article>
 
           <article class="vehicle">
-            <img src="https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?auto=format&fit=crop&w=1600&q=80" alt="DAF XG" />
+            <img src="https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?auto=format&fit=crop&w=1600&q=80" alt="DAF XG takograf hizmeti" />
             <div class="vehicle-body">
               <div class="vehicle-top">
                 <div>
@@ -802,6 +946,41 @@
       </div>
     </section>
 
+    <section id="seo-bilgi">
+      <div class="container seo-wrap">
+        <div class="section-head" style="max-width:100%; margin-bottom:20px;">
+          <div class="label">Gaziantep Takograf Hizmetleri</div>
+          <h2>Gaziantep'te Takograf Tamiri, Bakım ve Kalibrasyon</h2>
+          <p>
+            Gaziantep Takograf olarak tır, kamyon ve ticari araçlar için takograf tamiri, dijital takograf servisi, bakım, teknik kontrol ve kalibrasyon hizmetleri sunuyoruz. Gaziantep takograf tamiri arayan müşterilerimiz için hızlı ulaşım, net iletişim ve güven veren servis desteği sağlıyoruz.
+          </p>
+        </div>
+
+        <div class="seo-grid">
+          <div>
+            <div class="seo-list">
+              <div class="item">Gaziantep takograf tamiri</div>
+              <div class="item">Takograf bakım ve teknik kontrol</div>
+              <div class="item">Dijital takograf servisi</div>
+              <div class="item">Tır takograf ayarı</div>
+              <div class="item">Kamyon takograf servisi</div>
+              <div class="item">Takograf kalibrasyon hizmetleri</div>
+            </div>
+          </div>
+          <div>
+            <div class="seo-list">
+              <div class="item">Ağır vasıta araçlara özel destek</div>
+              <div class="item">Hızlı geri dönüş ve kolay iletişim</div>
+              <div class="item">WhatsApp ve telefon ile anında ulaşım</div>
+              <div class="item">Gaziantep Şehitkamil konumunda hizmet</div>
+              <div class="item">Ticari araç sahipleri için profesyonel servis</div>
+              <div class="item">Takograf sistemlerinde güvenilir çözüm</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="iletisim">
       <div class="container contact-wrap">
         <div class="contact-grid">
@@ -827,6 +1006,7 @@
           <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end;align-items:center;">
             <a class="btn btn-primary" href="https://wa.me/905067320285?text=Merhaba%20Gaziantep%20Takograf%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noreferrer">WhatsApp'tan Hemen Yaz</a>
             <a class="btn btn-secondary" href="tel:05067320285">Hemen Ara</a>
+            <a class="btn btn-secondary" href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwjYmbOmmMiTAxUAAAAAHQAAAAAQCQ..i&client=opera&pvq=Cg0vZy8xMXI3cWZyeHljIg4KCHRha29ncmFmEAIYAw&lqi=ChJnYXppYW50ZXAgdGFrb2dyYWZIq-fv5p63gIAIWhoQARgAGAEiEmdhemlhbnRlcCB0YWtvZ3JhZpIBF2VsZWN0cm9uaWNzX3JlcGFpcl9zaG9w&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=tr&sa=X&ftid=0x1531e5fbe743a0f9:0x516bc987f7f752e2" target="_blank" rel="noreferrer">Konuma Git</a>
           </div>
         </div>
       </div>
@@ -838,7 +1018,7 @@
       <div>© 2026 Gaziantep Takograf</div>
       <div style="display:flex;gap:18px;flex-wrap:wrap;">
         <a href="tel:05067320285">0506 732 02 85</a>
-        <a href="#iletisim">Konum</a>
+        <a href="https://maps.google.com/maps?vet=10CAAQoqAOahcKEwjYmbOmmMiTAxUAAAAAHQAAAAAQCQ..i&client=opera&pvq=Cg0vZy8xMXI3cWZyeHljIg4KCHRha29ncmFmEAIYAw&lqi=ChJnYXppYW50ZXAgdGFrb2dyYWZIq-fv5p63gIAIWhoQARgAGAEiEmdhemlhbnRlcCB0YWtvZ3JhZpIBF2VsZWN0cm9uaWNzX3JlcGFpcl9zaG9w&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=tr&sa=X&ftid=0x1531e5fbe743a0f9:0x516bc987f7f752e2" target="_blank" rel="noreferrer">Konum</a>
       </div>
     </div>
   </footer>
@@ -846,6 +1026,7 @@
   <script>
     const bubbles = document.getElementById('bubbles');
     const total = 26;
+
     for (let i = 0; i < total; i++) {
       const span = document.createElement('span');
       const size = Math.random() * 28 + 10;
