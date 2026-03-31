@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://dates1905.github.io/gazianteptakograf/sitemap.xml
